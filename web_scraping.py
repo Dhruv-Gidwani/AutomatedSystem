@@ -35,7 +35,6 @@ try:
     firm_name = view_iec_card.find_element(By.XPATH, "//input[@placeholder='Enter Firm Name']")  
     firm_name.send_keys("set")
     
-    # Prompt user for CAPTCHA input
     captcha_field = driver.find_element(By.XPATH, "//input[@placeholder='Please enter above CAPTCHA Code']")  
     captcha_code = input("Please enter the CAPTCHA code displayed on the screen: ")  
     captcha_field.send_keys(captcha_code)
